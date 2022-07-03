@@ -1,6 +1,6 @@
 on:
   schedule:    
-    - cron: '0 6 * * *'
+    - cron: '30 11 * * *'
 
 jobs:
   scale_dyno_to_1:
@@ -15,4 +15,4 @@ jobs:
           email: "utube0001@protonmail.com"      
           api_key: 44a53c3f-a0ba-429b-b557-75c6697bb637       
           process_type: worker
-          new_scale: 1
+          new_scale: 0
