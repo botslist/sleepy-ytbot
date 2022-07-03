@@ -1,0 +1,18 @@
+on:
+  schedule:    
+    - cron: '0 6 * * *'
+
+jobs:
+  scale_dyno_to_1:
+    runs-on: ubuntu-latest
+    name: scale dyno to 1
+    steps:
+      - name: scale dyno
+        id: scale
+        uses: deer42/heroku-scale-dyno@v1.0
+        with:
+          app_name: "sleepy-test"       
+          email: "utube0001@protonmail.com"      
+          api_key: 44a53c3f-a0ba-429b-b557-75c6697bb637       
+          process_type: worker
+          new_scale: 1
