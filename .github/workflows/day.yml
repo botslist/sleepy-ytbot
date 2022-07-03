@@ -1,6 +1,6 @@
 on:
   schedule:    
-    - cron: '30 11 * * *'
+    - cron: '47 11 * * *'
 
 jobs:
   scale_dyno_to_1:
