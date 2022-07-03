@@ -11,8 +11,8 @@ jobs:
         id: scale
         uses: deer42/heroku-scale-dyno@v1.0
         with:
-          app_name: "sleepy-test"       
-          email: "utube0001@protonmail.com"      
-          api_key: 44a53c3f-a0ba-429b-b557-75c6697bb637       
+          app_name: ${{ secrets.HEROKU_APP_NAME }}       
+          email: ${{ secrets.EMAIL }}      
+          api_key: ${{ secrets.HEROKU_API_KEY }}       
           process_type: worker
           new_scale: 0
